@@ -1,0 +1,9 @@
+﻿  ConsoleApplication3.cpp
+C:\Users\artor\source\repos\ConsoleApplication3\ConsoleApplication3\ConsoleApplication3.cpp(96,35): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\artor\source\repos\ConsoleApplication3\ConsoleApplication3\ConsoleApplication3.cpp(104,12): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+C:\Users\artor\source\repos\ConsoleApplication3\ConsoleApplication3\ConsoleApplication3.cpp(138,24): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+  ConsoleApplication3.vcxproj -> C:\Users\artor\source\repos\ConsoleApplication3\x64\Debug\ConsoleApplication3.exe
