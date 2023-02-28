@@ -152,6 +152,7 @@ int main() {
 	getline(cin, exp);
 	exp = checkExp(exp);
 	getskobochki(exp, skobochki_prio, skobochki_pos, k, action, act_td, act_td_pos, act_td_prio, number);
+
 }
 
 //double single_action(string exp) {
