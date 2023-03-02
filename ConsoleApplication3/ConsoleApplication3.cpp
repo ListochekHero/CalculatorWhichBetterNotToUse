@@ -2,6 +2,7 @@
 #include <string>
 #include <vector>
 #include <algorithm>
+#include <chrono>
 using namespace std;
 
 //		||
@@ -131,7 +132,7 @@ void getskobochki(string exp, vector<int>& skobochki_prio, vector<int>& skobochk
 		}
 	}
 	if (skobochki_prio.size() == 0) {
-		cout << getActions(exp, action, act_td, act_td_pos, act_td_prio, number);
+		cout << getActions(exp, action, act_td, act_td_pos, act_td_prio, number) << endl;
 	}
 	else {
 		vector<int>::iterator pos_skob = max_element(begin(skobochki_prio), end(skobochki_prio));
@@ -150,7 +151,10 @@ int main() {
 	vector <double> number;
 	char action[4]{ '/','*','-','+' };
 	getline(cin, exp);
+	auto start = chrono::high_resolution_clock::now();
 	exp = checkExp(exp);
 	getskobochki(exp, skobochki_prio, skobochki_pos, k, action, act_td, act_td_pos, act_td_prio, number);
-
+	auto end = chrono::high_resolution_clock::now();
+	chrono::duration<float> duration = end - start;
+	cout << duration.count() << endl;
 }
